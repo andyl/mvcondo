@@ -1,0 +1,43 @@
+--- content, html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang:}">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="Mesa Verde Condo For Rent!" />
+<meta name="keywords" content="Mesa Verde Condo Cortez Colorado Rent Vacation House Cabin" />
+<link rel="stylesheet" href="{relocatable: default.css}" type="text/css" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="{resource: webgen-css}" />
+<title>{headline:}</title>
+</head>
+
+<body>
+<div id="container" >
+  <div id="header">
+    <h1><a href="{relocatable: /index.page}">Mesa Verde Condo</a></h1>
+    <h2>{subhead: }</h2>
+  </div>
+
+  <div id="navigation">
+    {menu: {menuStyle: vertical, options: {maxLevels: 1}}}
+    <div style="text-align: right; margin-right: 25px">Language: <strong>{langbar:}</strong></div>
+  </div>
+
+  <div id="content">
+    {block:}
+  </div>
+
+  <div id="subcontent">
+    <div>	
+      <center>
+      </center>	
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>&copy; 2008-2014 Mesa Verde Condo | Design by <a href="http://andreasviklund.com">Andreas Viklund</a></p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    cmdparse (2.0.6)
+    webgen (0.4.7)
+      RedCloth (>= 3.0.0)
+      cmdparse (~> 2.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth
+  cmdparse
+  webgen (= 0.4.7)
