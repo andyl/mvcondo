@@ -2,9 +2,8 @@
 
 ## Building 
 
-This project is build using 'webgen'.
-
-webgen requires Ruby 1.8.7  (ruby-install ruby 1.8.7)
+This project is built using an old version of `webgen`, which only
+runs on Ruby 1.8.7.
 
     ruby-install ruby 1.8.7
     cd <dir>/mvcondo
@@ -18,14 +17,13 @@ To run the generator:
     cd <dir>/mvcondo
     webgen
 
-Project input is read from the 'src' directory.
-Project output is written to the 'output' directory.
+Project input is read from the `src` directory.
+Project output is written to the `output` directory.
 
 ## Deploying
 
-The project is hosted on github pages.
-
-Output HTML is stored on the `gh-pages` branch.
+The project is hosted on github pages.  Output HTML is stored on the
+`gh-pages` branch.
 
 To deploy:
 
