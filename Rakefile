@@ -7,15 +7,18 @@ def log(text)
   puts "--- #{text} ---".ljust(75,'-').yellow
 end
 
+def data
+  @data ||= YAML.load_file('./links.yaml')
+end
+
 def gen_link(lang)
   log "gen_link #{lang}"
-  @data ||= YAML.load_file('./links.yaml')
   fn = lang == :en ? "links.page" : "links.#{lang}.page"
   File.open("./src/#{fn}", 'w') do |f|
     hdr = <<-EOF
       ---
       headline: Mesa Verde / Cortez - Condo for Rent
-      title: Home
+      title: #{data[:title]}
       inMenu: true
       orderInfo: 0
       directoryName: ~
