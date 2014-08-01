@@ -1,7 +1,9 @@
 # vim ft=ruby
 
+require 'colored'
+
 def log(text)
-  puts "--- #{text} ---".ljust(70,'-')
+  puts "--- #{text} ---".ljust(75,'-').yellow
 end
 
 desc "Build the Site"
