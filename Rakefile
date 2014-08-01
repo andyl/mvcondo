@@ -63,6 +63,7 @@ task :build => :genlinks do
   cmd = "webgen"
   log cmd
   system cmd
+  system "echo mesa-verde-condo.com > output/CNAME"
 end
 
 desc "Deploy the Site"
