@@ -13,8 +13,14 @@ def data
   @data ||= YAML.load_file('links.yaml')
 end
 
-def gen_link_page(lang)
-  fn = "links#{lang}.page"
+def normalized_lang(input)
+  return "en" if input == ''
+  input.gsub('.','')
+end
+
+def gen_link_page(input_lang)
+  fn   = "links#{input_lang}.page"
+  lang = normalized_lang(input_lang)
   log "generating link page src/#{fn}"
   File.open("./src/#{fn}", 'w') do |f|
     hdr = <<-EOF
