@@ -28,7 +28,8 @@ task :deploy do
     git checkout master
   EOF
   script.each_line do |line|
-    log line
-    system line
+    cleanline = line.chomp.strip
+    log cleanline
+    system cleanline
   end
 end
