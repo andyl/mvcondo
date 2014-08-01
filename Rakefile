@@ -11,8 +11,8 @@ def data
   @data ||= YAML.load_file('links.yaml')
 end
 
-def gen_link(lang)
-  log "gen_link #{lang}"
+def gen_link_page(lang)
+  log "gen_link_page #{lang}"
   fn = lang == :en ? "links.page" : "links.#{lang}.page"
   lng_s = lang.to_s
   File.open("./src/#{fn}", 'w') do |f|
@@ -44,15 +44,15 @@ def gen_link(lang)
 end
 
 file 'src/links.page' => 'links.yaml' do
-  gen_link(:en)
+  gen_link_page(:en)
 end
 
 file 'src/links.de.page' => 'links.yaml' do
-  gen_link(:de)
+  gen_link_page(:de)
 end
 
 file 'src/links.fr.page' => 'links.yaml' do
-  gen_link(:fr)
+  gen_link_page(:fr)
 end
 
 desc "Generate the link pages"
