@@ -8,37 +8,37 @@ def log(text)
 end
 
 def data
-  @data ||= YAML.load_file('./links.yaml')
+  @data ||= YAML.load_file('links.yaml')
 end
 
 def gen_link(lang)
   log "gen_link #{lang}"
   fn = lang == :en ? "links.page" : "links.#{lang}.page"
+  lng_s = lang.to_s
   File.open("./src/#{fn}", 'w') do |f|
     hdr = <<-EOF
       ---
       headline: Mesa Verde / Cortez - Condo for Rent
-      title: #{data[:title]}
+      title: #{data['title'][lng_s]}
       inMenu: true
-      orderInfo: 0
-      directoryName: ~
-      subhead: #{data[:subhead][lang]}
+      orderInfo: 20
+      subhead: #{data['subhead'][lng_s]}
       ---
     EOF
-    f.puts ' '
     f.puts hdr.gsub('      ','')
-    f.puts ' '
-    f.puts "h2. #{data[:title]}"
-    f.puts ' '
-    f.puts data[:intro][lang]
-    data[:sections].each do |sec|
-      f.puts "h3. #{sec[:name]}"
-      f.puts ' '
-      sec[:links].each do |link|
-        line = "*'#{link[:lbl]}':#{link[:url]} - #{link[:desc][lang]}"
+    f.puts ''
+    f.puts "h2. #{data['title'][lng_s]}"
+    f.puts ''
+    f.puts data['intro'][lng_s]
+    f.puts ''
+    data['sections'].each do |sec|
+      f.puts "h3. #{sec['name']}"
+      f.puts ''
+      sec['links'].each do |link|
+        line = %[* "#{link['lbl']}":#{link['url']} - #{link['desc'][lng_s]}]
         f.puts line
       end
-      f.puts ' '
+      f.puts ''
     end
   end
 end
