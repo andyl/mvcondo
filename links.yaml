@@ -134,7 +134,7 @@ sections:
           de: Ein Spaß lokalen Theater
           fr: Un amusant de théâtre locales
       - lbl: Coffee Shops
-        url: http://maps.google.com/maps?f=l&view=map&q=coffee&near=Cortez,+CO&ie=UTF8&hl=en
+        url: https://maps.google.com/maps?q=coffee+in+cortez+colorado
         desc:
           en: Yes we have latte
           de: Ja, wir haben Latte
@@ -154,13 +154,13 @@ sections:
           de: West's produktivsten Trophäe Bereich
           fr: à l'Ouest la plus productive du trophée domaine
       - lbl: Cortez Livestock Auction
-        url: http://maps.google.com/maps?sourceid=navclient-ff&ie=UTF-8&rlz=1B2GGGL_enUS206US206&um=1&q=livestock+auction&near=Cortez,+CO&fb=1&view=text&latlng=37387674,-108611916,12608978003686762275
+        url: http://maps.google.com/maps?q=livestock+auction+in+cortez+colorado
         desc:
           en: It's fun!
           de: It's fun!
           fr: C'est amusant!
       - lbl: Sporting Goods
-        url: http://maps.google.com/maps?f=l&view=map&q=sporting+goods&near=Cortez,+CO&ie=UTF8&hl=en
+        url: http://maps.google.com/maps?q=sporting+goods+in+cortez+colorado
         desc:
           en: Top-notch gear for climbers, bikers, kayakers and hunters
           de: Top-notch Ausrüstung für Bergsteiger, Biker, kayakers und Jäger
