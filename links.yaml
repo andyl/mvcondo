@@ -1,0 +1,187 @@
+---
+title:
+  en: Links
+  de: Links
+  fr: Leins
+subhead:
+  en: A comfortable home for Mesa Verde visitors!
+  de: Ein komfortables Zuhause für Mesa Verde Besucher!
+  fr: Une maison confortable pour Mesa Verde visiteurs!
+intro:
+  en: At 6,200 ft. elevation with panoramic views of the San Juan Mountains and
+    Mesa Verde make this your home base for exploring the Four Corners Area
+    where the states of Colorado, New Mexico, Utah and Arizona meet.
+  de: Auf 6200 ft. Höhe mit Panoramablick auf die Berge und San Juan Mesa Verde
+    make this your home Ausgangspunkt für Ausflüge in die Four Corners Area, wo
+    die Staaten Colorado, New Mexico, Utah und Arizona treffen.
+  fr: À 6200 pieds d’altitude avec vue panoramique sur les montagnes de San Juan
+    de Mesa Verde et de rendre cette base de votre maison pour découvrir le Four
+    Corners Zone où les états du Colorado, Nouveau Mexique, Utah et l’Arizona se
+    rencontrer.
+sections:
+  - name: Day Trips
+    links:
+      - lbl: Mesa Verde National Park
+        url: http://www.mesaverde.com
+        desc:
+          en: The entrance to the park is 9 miles away
+          de: Der Eingang zum Park ist 9 Meilen entfernt
+          fr: L'entrée du parc est à 15 kilomètres
+      - lbl: Moab, Utah
+        url: http://www.moab-utah.com
+        desc:
+          en: The ultimate mountain biker destination
+          de: Das ultimative Ziel Mountain Biker
+          fr: Le motard destination ultime de montagne
+      - lbl: Canyonlands National Park
+        url: http://www.nps.gov/cany/
+        desc:
+          en: Western scenic hiking extraordinaire
+          de: Western szenische Wandern extraordinaire
+          fr: Western randonnée panoramique extraordinaire
+      - lbl: Monument Valley
+        url: http://www.monumentvalley.com
+        desc:
+          en: Petroglyphs by Anasazi
+          de: Felszeichnungen von Anasazi
+          fr: Pétroglyphes par Anasazi
+      - lbl: Arches National Park
+        url: http://www.arches.national-park.com
+        desc:
+          en: On edge of Moab, Utah
+          de: Am Rande von Moab, Utah
+          fr: Au bord de Moab, Utah
+      - lbl: Durango-Silverton Railroad
+        url: http://www.durangosilvertonrailroad.com
+        desc:
+          en: Narrow-gauge railroad and spectacular mountains
+          de: Narrow-gauge Eisenbahn-und spektakulären Berge
+          fr: Chemin de fer à voie étroite et de montagnes spectaculaires
+      - lbl: Ute Mountain Tribal Park
+        url: http://www.utemountaintribalpark.info
+        desc:
+          en: A guided tour led by members of the Ute Indian tribe
+          de: Eine Führung durch die Mitglieder des Indianerstammes Ute
+          fr: Une visite guidée conduite par les membres de la tribu indienne Ute
+      - lbl: Anasazi Heritage Center Museum
+        url: http://www.co.blm.gov/ahc
+        desc:
+          en: Ancestral Anasazi culture - 10 minutes away
+          de: Ancestral Anasazi-Kultur - 10 Minuten
+          fr: Ancestral culture Anasazi - 10 minutes
+      - lbl: Ouray, Co. Hot Springs
+        url: http://www.ouraycolorado.com
+        desc:
+          en: The Switzerland of America
+          de: Die Schweiz von Amerika
+          fr: Le Suisse de l'Amérique
+      - lbl: Trimble Hot Springs
+        url: http://www.trimblehotsprings.com
+        desc:
+          en: Spa and natural hot springs in Durango
+          de: Spa und natürliche heiße Quellen in Durango
+          fr: Spa et sources chaudes naturelles à Durango
+      - lbl: Four Corners Monument
+        url: http://en.wikipedia.org/wiki/Four_Corners_Monument
+        desc:
+          en: None other in the USA
+          de: Keine andere in den USA
+          fr: Aucune autre aux Etats-Unis
+  - name: Skiing
+    links:
+      - lbl: Telluride
+        url: http://www.tellurideskiresort.com
+        desc:
+          en: World class resort - 70 miles away
+          de: World class resort - 70 miles
+          fr: World class resort - 70 miles
+      - lbl: Wolf Creek
+        url: http://www.wolfcreekski.com
+        desc:
+          en: A small resort with some of the deepest snow in North America
+          de: Ein kleiner Ort mit einigen der tiefsten Schnee in Nordamerika
+          fr: Une petite station balnéaire avec certaines des plus profondes de neige en Amérique du Nord
+      - lbl: Durango Mountain
+        url: http://www.durangomountainresort.com
+        desc:
+          en: Skiing heaven, with a western twist
+          de: Ski Himmel, mit einem westlichen twist
+          fr: Ski ciel, avec une touche occidentale
+  - name: Local Activities
+    links:
+      - lbl: Conquistador Golf Course
+        url: http://www.fourcornersgolf.com
+        desc:
+          en: Beautiful course just 5 minutes away
+          de: Schöne natürlich nur 5 Minuten entfernt
+          fr: Belle bien sûr juste 5 minutes
+      - lbl: Outdoor Pool
+        url: http://co-cortez.civicplus.com/facilities/facility/details/Cortez-Municipal-Outdoor-Pool-41
+        desc:
+          en: The place to be on a hot summer day
+          de: The place to be an einem heißen Sommertag
+          fr: Le lieu d'être sur une chaude journée d'été
+      - lbl: Rec Center
+        url: http://co-cortez.civicplus.com/facilities/facility/details/Cortez-Recreation-Center-30
+        desc:
+          en: A big-city rec center in a small town
+          de: Eine große Stadt-rec-Center in einer kleinen Stadt
+          fr: Un grand centre-ville rec dans une petite ville
+      - lbl: Movie Theater
+        url: http://calendar.daily-times.com/cortez-co/venues/show/44107-allen-fiesta-theatre
+        desc:
+          en: A fun local theater
+          de: Ein Spaß lokalen Theater
+          fr: Un amusant de théâtre locales
+      - lbl: Coffee Shops
+        url: http://maps.google.com/maps?f=l&view=map&q=coffee&near=Cortez,+CO&ie=UTF8&hl=en
+        desc:
+          en: Yes we have latte
+          de: Ja, wir haben Latte
+          fr: Oui, nous avons latte
+  - name: Other
+    links:
+      - lbl: Horse Back Riding
+        url: http://www.rimrockoutfitters.com
+        desc:
+          en: Ride the Western slope of the La Plata Mountains
+          de: Ride the Western slope of the La Plata Mountains
+          fr: Montez la pente occidentale des montagnes La Plata
+      - lbl: Hunting
+        url: http://www.mesaverdecountry.com/tourism/recreation/hunting/hunting.html
+        desc:
+          en: West's most productive trophy area
+          de: West's produktivsten Trophäe Bereich
+          fr: à l'Ouest la plus productive du trophée domaine
+      - lbl: Cortez Livestock Auction
+        url: http://maps.google.com/maps?sourceid=navclient-ff&ie=UTF-8&rlz=1B2GGGL_enUS206US206&um=1&q=livestock+auction&near=Cortez,+CO&fb=1&view=text&latlng=37387674,-108611916,12608978003686762275
+        desc:
+          en: It's fun!
+          de: It's fun!
+          fr: C'est amusant!
+      - lbl: Sporting Goods
+        url: http://maps.google.com/maps?f=l&view=map&q=sporting+goods&near=Cortez,+CO&ie=UTF8&hl=en
+        desc:
+          en: Top-notch gear for climbers, bikers, kayakers and hunters
+          de: Top-notch Ausrüstung für Bergsteiger, Biker, kayakers und Jäger
+          fr: Top-notch engins pour les grimpeurs, les cyclistes, kayakistes et les chasseurs
+  - name: Travel Logistics
+    links:
+      - lbl: Cortez Airport
+        url: http://www.cityofcortez.com/index.aspx?NID=113
+        desc:
+          en: Our airport is five minutes away
+          de: Unser Flughafen ist fünf Minuten entfernt
+          fr: Notre aéroport est à cinq minutes
+      - lbl: Durango Airport
+        url: http://flydurango.com
+        desc:
+          en: More flight connections, but more farther away...
+          de: Mehr Flug-Verbindungen, sondern eher weiter entfernt…
+          fr: Plus de liaisons aériennes, mais plus loin…
+      - lbl: Farmington Airport
+        url: http://www.fmtn.org/index.aspx?NID=172
+        desc:
+          en: Another good regional airport
+          de: Eine weitere gute regionale Flughafen
+          fr: Une autre bonne aéroport régional
