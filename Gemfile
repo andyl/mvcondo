@@ -7,3 +7,5 @@ gem "RedCloth" , "4.1.9"
 gem "cmdparse"
 gem "colored"
 gem "rake"
+
+gem "craigslist"
