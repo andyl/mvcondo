@@ -226,13 +226,12 @@ line-height:1.5em;
 /************ Reporting Styles *************/
 
 #report {
-  margin-top: 0;
+  margin-top: 10;
   margin-bottom: 20px;
 }
 
 #report h2 {
-  margin: 0;
-  padding: 10px;
+  margin-bottom: 0;
 }
 
 #report table {
