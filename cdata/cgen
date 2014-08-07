@@ -52,7 +52,7 @@ def write_history
   File.open("../src/data_history.page", 'w') do |f|
     f.puts HDR.gsub("TBD", "History")
     f.puts <<-EOF
-    <a href="data_current.html">Current Data</a>
+    <a href="data_current.html">View Current Data</a>
     <div id="report">
     <h2>Historical Data</h2>
     <table>
@@ -63,9 +63,9 @@ def write_history
       <tr>
       <td>#{date}</td>
       <td>#{ad_count(ads)}</td>
-      <td>#{ad_high(ads)}</td>
-      <td>#{ad_low(ads)}</td>
-      <td>#{ad_avg(ads)}</td>
+      <td>$#{ad_high(ads)}</td>
+      <td>$#{ad_low(ads)}</td>
+      <td>$#{ad_avg(ads)}</td>
       </tr>
       EOF
     end
@@ -78,7 +78,7 @@ def write_current
   File.open("../src/data_current.page", 'w') do |f|
     f.puts HDR.gsub("TBD", "Current")
     f.puts <<-EOF
-    <a href="data_history.html">Historical Data</a>
+    <a href="data_history.html">View Historical Data</a>
     <div id="report">
     <h2>Current Listings for #{key}</h2>
     <table>

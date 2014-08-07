@@ -5,7 +5,7 @@ inMenu: false
 directoryName: ~
 subhead: A comfortablehome for Mesa Verde visitors!
 ---
-    <a href="data_current.html">Current Data</a>
+    <a href="data_current.html">View Current Data</a>
     <div id="report">
     <h2>Historical Data</h2>
     <table>
@@ -13,8 +13,8 @@ subhead: A comfortablehome for Mesa Verde visitors!
       <tr>
       <td>2014-08-07</td>
       <td>21</td>
-      <td>1200</td>
-      <td>550</td>
-      <td>961</td>
+      <td>$1200</td>
+      <td>$550</td>
+      <td>$961</td>
       </tr>
 </table></div>
