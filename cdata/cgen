@@ -45,7 +45,6 @@ end
 
 def ad_avg(ads)
   list = ad_rents(ads)
-  puts list
   (list.reduce(:+).to_f / list.size).round
 end
 
@@ -54,6 +53,7 @@ def write_history
     f.puts HDR.gsub("TBD", "History")
     f.puts <<-EOF
     <a href="data_current.html">Current Data</a>
+    <div id="report">
     <h2>Historical Data</h2>
     <table>
       <tr><th>Date</th><th># Ads</th><th>High</th><th>Low</th><th>Avg.</th></tr>
@@ -69,7 +69,7 @@ def write_history
       </tr>
       EOF
     end
-    f.puts "</table>"
+    f.puts "</table></div>"
   end
 end
 
@@ -79,6 +79,7 @@ def write_current
     f.puts HDR.gsub("TBD", "Current")
     f.puts <<-EOF
     <a href="data_history.html">Historical Data</a>
+    <div id="report">
     <h2>Current Listings for #{key}</h2>
     <table>
       <tr><th>Link</th><th>Text</th><th>Rent</th></tr>
@@ -94,7 +95,7 @@ def write_current
       </tr>
       EOF
     end
-    f.puts "</table>"
+    f.puts "</table></div>"
   end
 end
 
