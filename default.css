@@ -222,3 +222,42 @@ background-color:#fafbfc;
 color:#505050;
 line-height:1.5em;
 }
+
+/************ Reporting Styles *************/
+
+#report {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#report h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+#report table {
+  margin: 0;
+  border-color: black;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#report td {
+  border-color: black;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  margin: 0;
+  padding: 5px;
+}
+
+#report th {
+  border-color: black;
+  border-width: 1px 1px 0 0;
+  border-style: solid;
+  margin: 0;
+  padding: 5px;
+}
+
+
