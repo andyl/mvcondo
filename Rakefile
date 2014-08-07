@@ -70,6 +70,7 @@ task :build => :genlinks do
   system cmd
   system "echo mesa-verde-condo.com > output/CNAME"
   system "cp output/index.html output/cl.html"
+  system "cp output/index.html output/mp.html"
 end
 
 desc "Deploy the Site"
