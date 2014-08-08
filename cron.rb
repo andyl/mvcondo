@@ -17,11 +17,11 @@ set :output, "/tmp/mvcondo_cron.log"
 #   rake "test"
 # end
 
-every 10.minutes do
-  rake "test"
-end
+# every 10.minutes do
+#   rake "test"
+# end
 
-every 1.day do
+every 1.day, at: '5:00 am' do
   rake "cl:pull cl:generate generate deploy"
 end
 
