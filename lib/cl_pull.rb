@@ -28,7 +28,7 @@ module ClPull
     cat.limit = 1000
     cat.query = 'cortez'
 
-    puts "------------------------------------------".green
+    puts "--------------------------------------------".green
     puts "Fetching CL Data - #{Time.now}".yellow
     data_orig = cat.fetch
     data_filt = data_orig.select {|el| el["href"].match(/^\/apa/)}
