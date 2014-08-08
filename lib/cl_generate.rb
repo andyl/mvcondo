@@ -55,21 +55,23 @@ module ClGenerate
     File.open("#{SRC_DIR}/data_history.html.erb", 'w') do |f|
       f.puts HDR.gsub("TBD", "History")
       f.puts <<-EOF
-    <a href="data_current.html">View Current Listings</a>
-    <div id="report">
-    <h2>Historical Data</h2>
-    <table>
-      <tr><th>Date</th><th># Ads</th><th>High</th><th>Low</th><th>Avg.</th></tr>
+      <a href="data_current.html">View Current Listings</a>
+      <div id="report">
+      <h2>Historical Data</h2>
+      <table>
+        <tr><th>Date</th><th># Ads</th><th>High</th><th>Low</th><th>Avg.</th></tr>
       EOF
-      data.reverse.each do |date, ads|
+      keys = data.keys.sort.reverse
+      keys.each do |date|
+        ads = data[date]
         f.puts <<-EOF
-      <tr>
-      <td>#{date}</td>
-      <td>#{ad_count(ads)}</td>
-      <td>$#{ad_high(ads)}</td>
-      <td>$#{ad_low(ads)}</td>
-      <td>$#{ad_avg(ads)}</td>
-      </tr>
+        <tr>
+        <td>#{date}</td>
+        <td>#{ad_count(ads)}</td>
+        <td>$#{ad_high(ads)}</td>
+        <td>$#{ad_low(ads)}</td>
+        <td>$#{ad_avg(ads)}</td>
+        </tr>
         EOF
       end
       f.puts "</table></div>"
