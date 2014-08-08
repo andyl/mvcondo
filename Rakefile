@@ -16,6 +16,11 @@ end
 
 # ----- rake tasks -----
 
+desc "Output test data"
+task :test do
+  system "date"
+end
+
 desc "Build the Site"
 task :build do
   cmd = "bundle exec middleman build"
