@@ -22,6 +22,6 @@ set :output, "/tmp/mvcondo_cron.log"
 # end
 
 every 1.day, at: '5:00 am' do
-  rake "cl:pull cl:generate generate deploy"
+  rake "cl:pull cl:generate site:generate site:deploy"
 end
 

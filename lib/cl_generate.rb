@@ -24,7 +24,7 @@ module ClGenerate
 
   def current_data
     tmp = data
-    current_key = tmp.keys.sort.first
+    current_key = tmp.keys.sort.last
     current_dat = tmp[current_key]
     [current_key, current_dat]
   end
@@ -61,7 +61,7 @@ module ClGenerate
     <table>
       <tr><th>Date</th><th># Ads</th><th>High</th><th>Low</th><th>Avg.</th></tr>
       EOF
-      data.each do |date, ads|
+      data.reverse.each do |date, ads|
         f.puts <<-EOF
       <tr>
       <td>#{date}</td>

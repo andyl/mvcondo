@@ -16,31 +16,34 @@ end
 
 # ----- rake tasks -----
 
-desc "Show test data"
-task :test do
-  system "date"
+namespace :dev do
+  desc "Show test data"
+  task :test do
+    system "date"
+  end
+
+  desc "Live server for development"
+  task :serve do
+    cmd = "bundle exec middleman server"
+    log cmd
+    system cmd
+  end
 end
 
-desc "Live server for development"
-task :serve do
-  cmd = "bundle exec middleman server"
-  log cmd
-  system cmd
-end
+namespace :site do
+  desc "Generate the Site"
+  task :generate do
+    cmd = "bundle exec middleman build"
+    log cmd
+    system cmd
+    system "echo mesa-verde-condo.com > out/CNAME"
+    system "cp out/index.html out/cl.html"
+    system "cp out/index.html out/mp.html"
+  end
 
-desc "Generate the Site"
-task :generate do
-  cmd = "bundle exec middleman build"
-  log cmd
-  system cmd
-  system "echo mesa-verde-condo.com > out/CNAME"
-  system "cp out/index.html out/cl.html"
-  system "cp out/index.html out/mp.html"
-end
-
-desc "Deploy the Site"
-task :deploy do
-  script = <<-EOF
+  desc "Deploy the Site"
+  task :deploy do
+    script = <<-EOF
     rm -rf /tmp/out
     cp -r out /tmp
     git add .
@@ -53,11 +56,12 @@ task :deploy do
     git commit -am'update website'
     git push
     git checkout master
-  EOF
-  script.each_line do |line|
-    cleanline = line.chomp.strip
-    log cleanline
-    system cleanline
+    EOF
+    script.each_line do |line|
+      cleanline = line.chomp.strip
+      log cleanline
+      system cleanline
+    end
   end
 end
 
