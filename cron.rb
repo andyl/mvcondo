@@ -22,6 +22,6 @@ every 10.minutes do
 end
 
 every 1.day do
-  rake "cl:pull cl:generate build deploy"
+  rake "cl:pull cl:generate generate deploy"
 end
 
