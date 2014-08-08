@@ -29,8 +29,8 @@ end
 desc "Deploy the Site"
 task :deploy do
   script = <<-EOF
-    rm -rf /tmp/output
-    cp -r output /tmp
+    rm -rf /tmp/out
+    cp -r out /tmp
     git add .
     git commit -am'update source files'
     git push
