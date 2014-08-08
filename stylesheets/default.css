@@ -2,6 +2,7 @@
 
 /**************** Body and tag styles ****************/
 
+
 *{margin:0; padding:0;}
 
 body{
@@ -226,7 +227,7 @@ line-height:1.5em;
 /************ Reporting Styles *************/
 
 #report {
-  margin-top: 10;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
