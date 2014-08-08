@@ -4,30 +4,31 @@
 
 You must have update rights on the repo.
 
+First step is to make sure there is a gh-pages branch which holds the HTML output.
+
     git clone git@github.com:andyl/mvcondo.git    # clone the repo
     git branches -a                               # show all branches
     git checkout -b gh-pages origin/gh-pages      # make a local copy of the 'gh-pages' branch
 
 ## Support Software
 
-This project is built using an old version of `webgen`, which only
-runs on Ruby 1.8.7.
+This site depends on Ruby 2.1.2 and the `middleman` gem.
 
-    ruby-install ruby 1.8.7
+    ruby-install ruby 2.1.2
     cd <dir>/mvcondo
     gem install bundler
     bundle
 
 ## Editing and Building the Site
 
-Project input is read from the `src` directory.
+Project input is read from the `source` directory.
 
 To run the generator:
 
     cd <dir>/mvcondo
-    webgen
+    bundle exec middleman build
 
-Project output is written to the `output` directory.
+Project output is written to the `build` directory.
 
 ## Deploying the Site
 

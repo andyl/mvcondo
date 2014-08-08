@@ -1,11 +1,13 @@
 source "https://rubygems.org"
 
-ruby "1.8.7"
+ruby "2.1.2"
 
-gem "webgen"   , "0.4.7"
-gem "RedCloth" , "4.1.9"
-gem "cmdparse"
-gem "colored"
-gem "rake"
+gem "middleman", "~> 3.3.4"
 
-gem "craigslist"
+gem "RedCloth"    # texttile formatting
+
+gem "craigslist"  # CraigsList data importing
+gem "whenever"    # cron scheduling
+gem "colored"     # colored terminal output
+gem "rake"        # command processing
+gem "pry"         # debugger / repl
