@@ -8,7 +8,7 @@
 # - http://github.com/javan/whenever  | cron processor
 # - http://en.wikipedia.org/wiki/Cron | cron instructions
 
-set :output, "/tmp/mvcondo_cron.log"
+set :output, "/tmp/cron_mvcondo.log"
 
 every 1.day, at: '5:00 am' do
   rake "cl:pull cl:generate site:generate site:deploy"
