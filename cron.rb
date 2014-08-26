@@ -1,6 +1,6 @@
 # Use this file to easily define all of your cron jobs.
 #
-# to generate cronfile : `whenever -f cron.rb -w`
+# to generate cronfile : `whenever -f cron.rb --update-crontab`
 # for help on whenever : `whenever -h`
 # to see cron settings : `crontab -l`
 #
@@ -9,17 +9,6 @@
 # - http://en.wikipedia.org/wiki/Cron | cron instructions
 
 set :output, "/tmp/mvcondo_cron.log"
-
-# every 2.days do
-#   command "/usr/bin/some_great_command"
-#   runner "MyModel.some_method"
-#   rake "some:great:rake:task"
-#   rake "test"
-# end
-
-# every 10.minutes do
-#   rake "test"
-# end
 
 every 1.day, at: '5:00 am' do
   rake "cl:pull cl:generate site:generate site:deploy"
