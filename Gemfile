@@ -1,14 +1,35 @@
 source "https://rubygems.org"
+ruby "2.5.0"
 
-ruby "2.1.2"
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+gem "jekyll", "~> 3.7.3"
 
-gem "middleman", "~> 3.3.4"
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "minima", "~> 2.0"
 
-gem "middleman-slim" # slim templates
-gem "RedCloth"       # texttile templates
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
 
-gem "craigslist"     # CraigsList data importing
-gem "whenever"       # cron scheduling
-gem "colored"        # colored terminal output
-gem "rake"           # command processing
-gem "pry"            # debugger / repl
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+   gem "jekyll-feed", "~> 0.6"
+end
+
+gem 'json'
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+# gem 'github-pages', versions['github-pages']
+gem 'github-pages', :group => :jekyll_plugins
+
+gem 'jekyll-sitemap'
+gem 'jekyll-seo-tag'
