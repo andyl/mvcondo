@@ -1,6 +1,6 @@
 title: Mesa Verde Condo
-dev_email: mesa.verde.condo@gmail.com
-email: mesa.verde.condo@gmail.com
+dev_email: andy@r210.com
+email: sueln15@gmail.com
 description: "Mesa Verde Condo"
 url: https://mesa-verde-condo.com
 github_username:  andyl
@@ -14,7 +14,6 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
-  - jekyll-relative-links
 exclude:
   - Gemfile
   - Gemfile.lock
